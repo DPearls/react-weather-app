@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { RotatingLines } from "react-loader-spinner";
 import "./styles.css";
 
 export default function SearchEngine() {
@@ -23,6 +24,15 @@ export default function SearchEngine() {
     let apiKey = "de879077b25c4821b4116348dcf1cdcc";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayWeather);
+    return (
+      <RotatingLines
+        strokeColor="grey"
+        strokeWidth="5"
+        animationDuration="0.75"
+        width="96"
+        visible={true}
+      />
+    );
   }
   function updateSearch(event) {
     setCity(event.target.value);
