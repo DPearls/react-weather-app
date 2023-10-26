@@ -3,7 +3,7 @@ import axios from "axios";
 import { RotatingLines } from "react-loader-spinner";
 import "./styles.css";
 
-export default function SearchEngine() {
+export default function SearchEngine(props) {
   let [city, setCity] = useState("");
   let [loaded, setLoaded] = useState(false);
   let [weather, setWeather] = useState({});
