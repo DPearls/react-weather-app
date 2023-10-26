@@ -16,7 +16,7 @@ function App() {
         <SearchEngine />
         <ul>
           <li>
-            Last updated: <span id="date"></span>
+            <span id="date"></span>
           </li>
           <li id="description"></li>
         </ul>
