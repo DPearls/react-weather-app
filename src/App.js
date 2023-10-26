@@ -13,7 +13,6 @@ function App() {
             <h1>Lagos</h1>
           </div>
         </div>
-
         <SearchEngine />
         <ul>
           <li>
