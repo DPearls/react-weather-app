@@ -12,7 +12,6 @@ function App() {
             <h1>Lagos</h1>
           </div>
         </div>
-
         <SearchEngine />
         <ul>
           <li>
@@ -41,11 +40,20 @@ function App() {
         </div>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/DPearls/react-weather-app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Open Source Code{" "}
+        </a>{" "}
+        by{" "}
+        <a
+          href="https://roardigitalhub.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Folasayo Owolabi{" "}
         </a>
       </header>
     </div>
