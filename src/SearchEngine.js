@@ -47,6 +47,7 @@ export default function SearchEngine(props) {
         onChange={updateSearch}
       />
       <input type="submit" value="Search" />
+      <input type="submit" value="Current" />
     </form>
   );
 
