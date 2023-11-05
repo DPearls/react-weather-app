@@ -6,12 +6,42 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div ClassName="row">
-          <div className="col">
-            <span className="location"></span>
-            <h1>Lagos</h1>
-          </div>
-        </div>
+        <span className="location"></span>
+        <h1>
+          <a
+            className="App-link"
+            href="https://github.com/DPearls/react-weather-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            Lagos{" "}
+          </a>{" "}
+          <a
+            className="App-link"
+            href="https://github.com/DPearls/react-weather-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ibadan
+          </a>
+          <a
+            className="App-link"
+            href="https://github.com/DPearls/react-weather-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Abuja
+          </a>
+          <a
+            className="App-link"
+            href="https://github.com/DPearls/react-weather-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Port-Harcourt
+          </a>{" "}
+        </h1>
         <SearchEngine />
         <ul>
           <li>
