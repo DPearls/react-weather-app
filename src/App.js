@@ -5,14 +5,14 @@ import "./styles.css";
 function App() {
   return (
     <div className="App">
-      <div className="Container"></div>
       <header className="App-header">
         <div ClassName="row">
-          <div className="col-6">
+          <div className="col">
             <span className="location"></span>
             <h1>Lagos</h1>
           </div>
         </div>
+
         <SearchEngine />
         <ul>
           <li>
@@ -45,7 +45,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Open Source Code, by Folasayo Owolabi
+          Learn React
         </a>
       </header>
     </div>

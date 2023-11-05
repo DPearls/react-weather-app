@@ -7,7 +7,6 @@ export default function SearchEngine(props) {
   let [city, setCity] = useState("");
   let [loaded, setLoaded] = useState(false);
   let [weather, setWeather] = useState({});
-  let [location, setLocation] = useState("");
 
   function displayWeather(response) {
     setLoaded(true);
@@ -18,18 +17,6 @@ export default function SearchEngine(props) {
       wind: response.data.wind.speed,
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
-  }
-
-  function myLocation(response) {
-    const locations = ["Lagos", "Ibadan", "Abuja", "Port-Harcourt"];
-
-    return (
-      <ul>
-        {locations.map((location, index) => (
-          <li key={index}>{location}</li>
-        ))}
-      </ul>
-    );
   }
 
   function handleSubmit(event) {
@@ -49,7 +36,6 @@ export default function SearchEngine(props) {
   }
   function updateSearch(event) {
     setCity(event.target.value);
-    setLocation(event.target.value);
   }
 
   let form = (
