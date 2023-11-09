@@ -43,12 +43,15 @@ function App() {
         </h1>
         <SearchEngine />
       </header>
-      <ul>
-        <li>
-          <span id="date"></span>
-        </li>
-        <li id="description"></li>
-      </ul>
+      <div className="Info">
+        <subheader className="Info-header">
+          <div>Lagos</div>
+          <div>Sunday 13:01 </div>
+          <div>Clouds</div>
+        </subheader>
+        <div className="temperature"></div>
+        17C
+      </div>
       <div className="row">
         <div className="col-6">
           <span className="icon">
