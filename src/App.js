@@ -50,27 +50,11 @@ function App() {
           <div>Clouds</div>
         </subheader>
         <div className="temperature"></div>
-        17C
+        <span className="icon">
+          <img src="" alt="Cloudy" id="icon" /> 17C{" "}
+        </span>
       </div>
-      <div className="row">
-        <div className="col-6">
-          <span className="icon">
-            <img src="" alt="Partly cloudy" id="icon" />
-          </span>
-          <strong id="temperature"> </strong>
-          <span className="units"> °C </span>
-        </div>
-        <div className="col-6">
-          <ul>
-            <li>
-              Humidity:<span id="humidity"></span>%
-            </li>
-            <li>
-              Wind: <span id="wind"></span> km/h
-            </li>
-          </ul>
-        </div>
-      </div>
+      <div className="days">Mon Tue Wed Thurs Fri</div>
       <a
         className="App-link"
         href="https://github.com/DPearls/react-weather-app"
