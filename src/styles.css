@@ -23,3 +23,9 @@ h1 {
   margin-bottom: 20px;
   justify-content: space-evenly;
 }
+li {
+  list-style: none;
+}
+Days {
+  justify-content: space-evenly;
+}

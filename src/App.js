@@ -52,13 +52,18 @@ function App() {
         <div className="row">
           <div className="col-6">
             <span className="icon">
-              <img src="" alt="" id="icon" /> <strong>17°C </strong>Humidity:
-              62% Wind: 3 km/h
+              <img src="" alt="" id="icon" /> <strong>17°C </strong>
+              <div className="col-6">
+                <ul>
+                  <li>Humidity: 62% </li>
+                  <li>Wind: 3 km/h </li>
+                </ul>
+              </div>
             </span>
           </div>
         </div>
       </div>
-      <div className="days">Mon Tue Wed Thurs Fri</div>
+      <div className="Days">Mon Tue Wed Thurs Fri</div>
       <a
         className="App-link"
         href="https://github.com/DPearls/react-weather-app"
