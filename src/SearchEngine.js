@@ -46,6 +46,7 @@ export default function SearchEngine(props) {
         className="bar"
         onChange={updateSearch}
       />
+
       <input type="submit" value="Search" />
       <input type="submit" value="Current" />
     </form>

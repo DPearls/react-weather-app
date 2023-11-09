@@ -45,14 +45,18 @@ function App() {
       </header>
       <div className="Info">
         <subheader className="Info-header">
-          <div>Lagos</div>
+          <div>Lagos, Nigeria</div>
           <div>Sunday 13:01 </div>
           <div>Clouds</div>
         </subheader>
-        <div className="temperature"></div>
-        <span className="icon">
-          <img src="" alt="" id="icon" /> 17C{" "}
-        </span>
+        <div className="row">
+          <div className="col-6">
+            <span className="icon">
+              <img src="" alt="" id="icon" /> <strong>17°C </strong>Humidity:
+              62% Wind: 3 km/h
+            </span>
+          </div>
+        </div>
       </div>
       <div className="days">Mon Tue Wed Thurs Fri</div>
       <a
