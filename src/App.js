@@ -51,7 +51,7 @@ function App() {
         </subheader>
         <div className="temperature"></div>
         <span className="icon">
-          <img src="" alt="Cloudy" id="icon" /> 17C{" "}
+          <img src="" alt="" id="icon" /> 17C{" "}
         </span>
       </div>
       <div className="days">Mon Tue Wed Thurs Fri</div>

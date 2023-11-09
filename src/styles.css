@@ -2,6 +2,12 @@
   font-family: sans-serif;
   text-align: left;
   padding: 20px;
+  background: linear-gradient(90.4deg, #c1630b, #13044e);
+  max-width: 900px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  margin: 30px auto;
+  display: block;
 }
 
 .Location {
