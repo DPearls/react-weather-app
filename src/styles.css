@@ -74,6 +74,8 @@ li {
 .Windy {
   color: white;
 }
-Day Days {
-  justify-content: space-evenly;
+.Forecast {
+  color: white;
+  display: flex;
+  justify-content: space-between;
 }

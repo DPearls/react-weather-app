@@ -70,24 +70,49 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="Days">Mon Tue Wed Thurs Fri</div>
-      <a
-        className="App-link"
-        href="https://github.com/DPearls/react-weather-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Open Source Code{" "}
-      </a>{" "}
-      by{" "}
-      <a
-        href="https://roardigitalhub.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {" "}
-        Folasayo Owolabi{" "}
-      </a>
+      <div className="Forecast">
+        <div className="Days">
+          <div className="row">
+            <div className="col-md-2">
+              <span>Mon</span>
+              <span>Tue</span>
+              <span>Wed</span>
+              <span>Thurs</span>
+              <span>Fri</span>
+            </div>
+          </div>
+          <div className="Humid-wind">
+            <div className="row">
+              <div className="col-md-2">
+                <span>31%</span>
+                <span>32%</span>
+                <span>33%</span>
+                <span>34%</span>
+                <span>35%</span>
+              </div>
+            </div>{" "}
+          </div>
+        </div>
+      </div>
+      <p>
+        <a
+          className="App-link"
+          href="https://github.com/DPearls/react-weather-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open Source Code{" "}
+        </a>{" "}
+        by{" "}
+        <a
+          href="https://roardigitalhub.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Folasayo Owolabi{" "}
+        </a>
+      </p>
     </div>
   );
 }
