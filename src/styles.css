@@ -12,12 +12,12 @@
 .App-link-header {
   color: white;
   font-size: 25px;
+  display: flex;
   justify-content: space-around;
   text-decoration: none;
 }
 
-.App-link-header a:hover {
-  color: #c1630b;
+.App-link-header:hover {
   text-decoration: underline;
 }
 
@@ -34,6 +34,36 @@ h1 {
   font-size: 15px;
   padding-bottom: 10px;
   justify-content: space-between;
+}
+input[type="search"] {
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.Location {
+  font-size: 20px;
+  color: #13044e;
+  padding-top: 10px;
+}
+.Day-time {
+  font-size: 16px;
+  color: white;
+}
+.Weather-desc {
+  font-size: 16px;
+  color: white;
+  padding-bottom: 15px;
+}
+.Tempp {
+  font-size: 50px;
+  color: #13044e;
+}
+.Units {
+  position: relative;
+  font-size: 20px;
+  top: -30px;
+  color: #13044e;
 }
 li {
   list-style: none;
