@@ -9,6 +9,12 @@
   margin: 30px auto;
   display: block;
 }
+.App-link-header {
+  color: white;
+  font-size: 25px;
+  justify-content: space-around;
+  text-decoration: none;
+}
 
 .Location {
   display: flex;
@@ -19,7 +25,7 @@
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 20px;
   justify-content: space-evenly;
 }

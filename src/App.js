@@ -1,6 +1,7 @@
 import React from "react";
 import SearchEngine from "./SearchEngine";
 import "./styles.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <header className="App-header">
         <h1>
           <a
-            className="App-link"
+            className="App-link-header"
             href="https://github.com/DPearls/react-weather-app"
             target="_blank"
             rel="noopener noreferrer"
@@ -17,7 +18,7 @@ function App() {
             Lagos{" "}
           </a>{" "}
           <a
-            className="App-link"
+            className="App-link-header"
             href="https://github.com/DPearls/react-weather-app"
             target="_blank"
             rel="noopener noreferrer"
@@ -25,7 +26,7 @@ function App() {
             Ibadan
           </a>
           <a
-            className="App-link"
+            className="App-link-header"
             href="https://github.com/DPearls/react-weather-app"
             target="_blank"
             rel="noopener noreferrer"
@@ -33,7 +34,7 @@ function App() {
             Abuja
           </a>
           <a
-            className="App-link"
+            className="App-link-header"
             href="https://github.com/DPearls/react-weather-app"
             target="_blank"
             rel="noopener noreferrer"
