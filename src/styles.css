@@ -68,6 +68,12 @@ input[type="search"] {
 li {
   list-style: none;
 }
-Days {
+.Humidy {
+  color: white;
+}
+.Windy {
+  color: white;
+}
+Day Days {
   justify-content: space-evenly;
 }

@@ -59,8 +59,12 @@ function App() {
             <span className="Units"> °C </span>
             <div className="col-6">
               <ul>
-                <li>Humidity: 62% </li>
-                <li>Wind: 3 km/h </li>
+                <li className="Humidy">
+                  <span> Humidity:</span>62%
+                </li>
+                <li className="Windy">
+                  Wind: <span></span> km/h
+                </li>
               </ul>
             </div>
           </div>
