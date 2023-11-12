@@ -16,6 +16,11 @@
   text-decoration: none;
 }
 
+.App-link-header a:hover {
+  color: #c1630b;
+  text-decoration: underline;
+}
+
 .Location {
   display: flex;
 }
@@ -25,9 +30,10 @@
 }
 
 h1 {
+  display: flex;
   font-size: 15px;
-  margin-bottom: 20px;
-  justify-content: space-evenly;
+  padding-bottom: 10px;
+  justify-content: space-between;
 }
 li {
   list-style: none;

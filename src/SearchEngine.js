@@ -44,15 +44,15 @@ export default function SearchEngine(props) {
         <div className="col-6">
           <input
             type="search"
+            class="form-control"
             placeholder="Enter a city..."
             className="bar"
             onChange={updateSearch}
           />
+          <input type="submit" value="Search" class="btn btn-primary" />
+          <input type="submit" value="Current" class="btn btn-light" />
         </div>
       </div>
-
-      <input type="submit" value="Search" class="btn btn-primary" />
-      <input type="submit" value="Current" class="btn btn-light" />
     </form>
   );
 
