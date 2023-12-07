@@ -1,7 +1,7 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import SearchEngine from "./SearchEngine";
 import "./styles.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
@@ -57,16 +57,16 @@ function App() {
             </span>
             <strong className="Tempp">17 </strong>
             <span className="Units"> °C </span>
-            <div className="col-6">
-              <ul>
-                <li className="Humidy">
-                  <span> Humidity:</span>62%
-                </li>
-                <li className="Windy">
-                  Wind: <span></span> km/h
-                </li>
-              </ul>
-            </div>
+          </div>
+          <div className="col-6">
+            <ul>
+              <li className="Humidy">
+                <span> Humidity:</span>62%
+              </li>
+              <li className="Windy">
+                Wind: <span></span> km/h
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -75,9 +75,17 @@ function App() {
           <div className="row">
             <div className="col-md-2">
               <span>Mon</span>
+            </div>
+            <div className="col-md-2">
               <span>Tue</span>
+            </div>
+            <div className="col-md-2">
               <span>Wed</span>
+            </div>
+            <div className="col-md-2">
               <span>Thurs</span>
+            </div>
+            <div className="col-md-2">
               <span>Fri</span>
             </div>
           </div>
@@ -85,12 +93,20 @@ function App() {
             <div className="row">
               <div className="col-md-2">
                 <span>31%</span>
+              </div>
+              <div className="col-md-2">
                 <span>32%</span>
+              </div>
+              <div className="col-md-2">
                 <span>33%</span>
+              </div>
+              <div className="col-md-2">
                 <span>34%</span>
+              </div>
+              <div className="col-md-2">
                 <span>35%</span>
               </div>
-            </div>{" "}
+            </div>
           </div>
         </div>
       </div>
