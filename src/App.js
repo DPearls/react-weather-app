@@ -70,46 +70,6 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="Forecast">
-        <div className="Days">
-          <div className="row">
-            <div className="col-md-2">
-              <span>Mon</span>
-            </div>
-            <div className="col-md-2">
-              <span>Tue</span>
-            </div>
-            <div className="col-md-2">
-              <span>Wed</span>
-            </div>
-            <div className="col-md-2">
-              <span>Thurs</span>
-            </div>
-            <div className="col-md-2">
-              <span>Fri</span>
-            </div>
-          </div>
-          <div className="Humid-wind">
-            <div className="row">
-              <div className="col-md-2">
-                <span>31%</span>
-              </div>
-              <div className="col-md-2">
-                <span>32%</span>
-              </div>
-              <div className="col-md-2">
-                <span>33%</span>
-              </div>
-              <div className="col-md-2">
-                <span>34%</span>
-              </div>
-              <div className="col-md-2">
-                <span>35%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <p>
         <a
           className="App-link"

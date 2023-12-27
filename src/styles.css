@@ -65,17 +65,3 @@ input[type="search"] {
   top: -30px;
   color: #13044e;
 }
-li {
-  list-style: none;
-}
-.Humidy {
-  color: white;
-}
-.Windy {
-  color: white;
-}
-.Forecast {
-  color: white;
-  display: flex;
-  justify-content: space-between;
-}
