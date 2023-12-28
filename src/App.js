@@ -9,27 +9,29 @@ function App() {
       <div className="container">
         <SearchEngine />
 
-        <h1>Lagos, Nigeria</h1>
+        <h1>{weatherData.city}</h1>
         <ul>
-          <li>Sunday 13:01 </li>
-          <li>Partly Cloudy</li>
+          <li>{weatherData.date}</li>
+          <li className="text-cqpitalize">{weatherData.description}</li>
         </ul>
         <div className="row mt-3">
           <div className="col-6">
             <div className="clearfix">
               <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="Partly Cloudy"
+                src={weatherData.icon}
+                alt={weatherData.description}
                 className="float-left"
               />
-              <span className="temp">34</span>
+              <span className="temp">
+                {Math.round(weatherData.temperature)}
+              </span>
               <span className="unit">°C</span>
             </div>
           </div>
           <div className="col-6">
             <ul>
-              <li>Humidity: 61%</li>
-              <li>Wind: 13 km/h</li>
+              <li>Humidity: {weatherData.humidity}%</li>
+              <li>{weatherData.wind}km/h</li>
             </ul>
           </div>
         </div>
