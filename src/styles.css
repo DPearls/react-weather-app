@@ -1,70 +1,54 @@
 .App {
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: left;
   padding: 20px;
-  background: linear-gradient(90.4deg, #c1630b, #13044e);
-  max-width: 900px;
-  border: 1px solid #000000;
+  background: linear-gradient(90.4deg, #13044e, #c1630b);
+  color: #ffffff;
+  max-width: 600px;
+  border: 1px solid #ffffff;
   border-radius: 10px;
   margin: 30px auto;
   display: block;
 }
-.App-link-header {
+
+.App h1 {
+  color: #c1630b;
+  margin: 20px 0 0 0;
+  font-weight: 100;
+  font-size: 20px;
+}
+.App ul {
+  margin: 0;
+  padding: 0;
+}
+.App li {
+  color: #ffffff;
+  font-size: 16px;
+  list-style: none;
+}
+.App footer {
+  color: #c1630b;
+  font-size: 12px;
+}
+
+.App a {
   color: white;
-  font-size: 25px;
-  display: flex;
-  justify-content: space-around;
+  font-size: 12px;
   text-decoration: none;
 }
-
-.App-link-header:hover {
-  text-decoration: underline;
+.App img {
+  margin-right: 5px;
+  display: inline-block;
+  margin-right: 5px;
 }
-
-.Location {
-  display: flex;
+.App .temp {
+  font-size: 40px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 40px;
 }
-
-.item {
-  margin-right: 10px;
-}
-
-h1 {
-  display: flex;
-  font-size: 15px;
-  padding-bottom: 10px;
-  justify-content: space-between;
-}
-input[type="search"] {
-  border: none;
-  border-radius: 5px;
-  padding: 8px;
-}
-
-.Location {
-  font-size: 20px;
-  color: #13044e;
-  padding-top: 10px;
-}
-.Day-time {
-  font-size: 16px;
-  color: white;
-}
-.Weather-desc {
-  font-size: 16px;
-  color: white;
-  padding-bottom: 15px;
-}
-.Tempp {
-  font-size: 50px;
-  color: #13044e;
-}
-.Units {
+.App .unit {
   position: relative;
-  font-size: 20px;
-  top: -30px;
-  color: #13044e;
-}
-.footer {
-  color: #13044e;
+  top: -20px;
+  line-height: 1;
 }

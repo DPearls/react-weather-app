@@ -6,39 +6,36 @@ import "./styles.css";
 function App() {
   return (
     <div className="App">
-      <SearchEngine />
-      <header className="App-header">
+      <div className="container">
+        <SearchEngine />
+
         <h1>Lagos, Nigeria</h1>
         <ul>
           <li>Sunday 13:01 </li>
           <li>Partly Cloudy</li>
         </ul>
-      </header>
-      <div className="row">
-        <div className="col-6">
-          <img
-            src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-            alt="Partly Cloudy"
-          />
-          34°C
-        </div>
-        <div className="col-6">
-          <ul>
-            <li>Humidity: 61%</li>
-            <li>Wind: 13 km/h</li>
-          </ul>
+        <div className="row mt-3">
+          <div className="col-6">
+            <div className="clearfix">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                alt="Partly Cloudy"
+                className="float-left"
+              />
+              <span className="temp">34</span>
+              <span className="unit">°C</span>
+            </div>
+          </div>
+          <div className="col-6">
+            <ul>
+              <li>Humidity: 61%</li>
+              <li>Wind: 13 km/h</li>
+            </ul>
+          </div>
         </div>
       </div>
       <footer>
-        <a
-          className="App-link"
-          href="https://github.com/DPearls/react-weather-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Open Source Code{" "}
-        </a>{" "}
-        by{" "}
+        This project was coded by
         <a
           href="https://roardigitalhub.com"
           target="_blank"
@@ -47,9 +44,17 @@ function App() {
           {" "}
           Folasayo Owolabi{" "}
         </a>
+        and is{" "}
+        <a
+          href="https://github.com/DPearls/react-weather-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          open sourced{" "}
+        </a>{" "}
+        on GitHub
       </footer>
     </div>
   );
 }
-
 export default App;
