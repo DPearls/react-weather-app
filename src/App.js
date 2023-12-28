@@ -6,71 +6,30 @@ import "./styles.css";
 function App() {
   return (
     <div className="App">
+      <SearchEngine />
       <header className="App-header">
-        <h1>
-          <a
-            className="App-link-header"
-            href="https://github.com/DPearls/react-weather-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            Lagos{" "}
-          </a>{" "}
-          <a
-            className="App-link-header"
-            href="https://github.com/DPearls/react-weather-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Ibadan
-          </a>
-          <a
-            className="App-link-header"
-            href="https://github.com/DPearls/react-weather-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Abuja
-          </a>
-          <a
-            className="App-link-header"
-            href="https://github.com/DPearls/react-weather-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Port-Harcourt
-          </a>{" "}
-        </h1>
-        <SearchEngine />
+        <h1>Lagos, Nigeria</h1>
+        <ul>
+          <li>Sunday 13:01 </li>
+          <li>Partly Cloudy</li>
+        </ul>
       </header>
-      <div className="Info">
-        <subheader className="Info-header">
-          <div className="Location">Lagos, Nigeria</div>
-          <div className="Day-time">Sunday 13:01 </div>
-          <div className="Weather-desc">Clouds</div>
-        </subheader>
-        <div className="row">
-          <div className="col-6">
-            <span className="icon">
-              <img src="" alt="" />{" "}
-            </span>
-            <strong className="Tempp">17 </strong>
-            <span className="Units"> °C </span>
-          </div>
-          <div className="col-6">
-            <ul>
-              <li className="Humidy">
-                <span> Humidity:</span>62%
-              </li>
-              <li className="Windy">
-                Wind: <span></span> km/h
-              </li>
-            </ul>
-          </div>
+      <div className="row">
+        <div className="col-6">
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+            alt="Partly Cloudy"
+          />
+          34°C
+        </div>
+        <div className="col-6">
+          <ul>
+            <li>Humidity: 61%</li>
+            <li>Wind: 13 km/h</li>
+          </ul>
         </div>
       </div>
-      <p>
+      <footer>
         <a
           className="App-link"
           href="https://github.com/DPearls/react-weather-app"
@@ -88,7 +47,7 @@ function App() {
           {" "}
           Folasayo Owolabi{" "}
         </a>
-      </p>
+      </footer>
     </div>
   );
 }

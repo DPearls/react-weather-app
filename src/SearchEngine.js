@@ -41,18 +41,16 @@ export default function SearchEngine(props) {
   let form = (
     <form onSubmit={handleSubmit}>
       <div className="row">
-        <div className="col-6">
+        <div className="col-9">
           <input
             type="search"
-            class="form-control"
+            className="form-control"
             placeholder="Enter a city..."
-            className="bar"
             onChange={updateSearch}
           />
-
+        </div>
+        <div className="col-3">
           <input type="submit" value="Search" className="btn btn-primary" />
-
-          <input type="submit" value="Current" className="btn btn-light" />
         </div>
       </div>
     </form>
