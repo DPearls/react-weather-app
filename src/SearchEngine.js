@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { RotatingLines } from "react-loader-spinner";
 import "./styles.css";
 
 export default function SearchEngine() {
@@ -10,7 +9,7 @@ export default function SearchEngine() {
       loaded: true,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
-      wind: response.data.main.wind.speed,
+      wind: response.data.wind.speed,
       city: response.data.name,
       date: "Sunday 21:00",
       description: response.data.weather[0].description,
@@ -37,6 +36,32 @@ export default function SearchEngine() {
               className="btn btn-primary"
               w-100
             />
+          </div>
+        </div>
+        <h1>{weatherData.city}</h1>
+        <ul>
+          <li>{weatherData.date}</li>
+          <li className="text-cqpitalize">{weatherData.description}</li>
+        </ul>
+        <div className="row mt-3">
+          <div className="col-6">
+            <div className="clearfix">
+              <img
+                src={weatherData.icon}
+                alt={weatherData.description}
+                className="float-left"
+              />
+              <span className="temp">
+                {Math.round(weatherData.temperature)}
+              </span>
+              <span className="unit">°C</span>
+            </div>
+          </div>
+          <div className="col-6">
+            <ul>
+              <li>Humidity: {weatherData.humidity}%</li>
+              <li>{weatherData.wind}km/h</li>
+            </ul>
           </div>
         </div>
       </form>
