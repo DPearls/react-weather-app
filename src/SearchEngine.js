@@ -41,7 +41,7 @@ export default function SearchEngine() {
         <h1>{weatherData.city}</h1>
         <ul>
           <li>{weatherData.date}</li>
-          <li className="text-cqpitalize">{weatherData.description}</li>
+          <li className="text-capitalize">{weatherData.description}</li>
         </ul>
         <div className="row mt-3">
           <div className="col-6">

@@ -5,9 +5,11 @@ import "./styles.css";
 
 function App() {
   return (
-    <div className="App">
-      <div className="container">
-        <SearchEngine />
+    <div>
+      <div className="App">
+        <div className="container">
+          <SearchEngine />
+        </div>
       </div>
       <footer>
         This project was coded by
