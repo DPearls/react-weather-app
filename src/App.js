@@ -8,7 +8,7 @@ function App() {
     <div>
       <div className="App">
         <div className="container">
-          <SearchEngine />
+          <SearchEngine defaultCity="Ibadan" />
         </div>
       </div>
       <footer>
