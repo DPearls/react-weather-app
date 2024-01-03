@@ -1,17 +1,19 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import "./styles.css";
 
 export default function SearchEngine(props) {
   const [weatherData, setWeatherData] = useState({ loaded: false });
   function showResponse(response) {
+    console.log(response.data);
     setWeatherData({
       loaded: true,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       city: response.data.name,
-      date: "Sunday 21:00",
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       icon: "https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png",
     });
@@ -40,7 +42,9 @@ export default function SearchEngine(props) {
         </div>
         <h1>{weatherData.city}</h1>
         <ul>
-          <li>{weatherData.date}</li>
+          <li>
+            <FormattedDate date={weatherData.date} />
+          </li>
           <li className="text-capitalize">{weatherData.description}</li>
         </ul>
         <div className="row mt-3">
