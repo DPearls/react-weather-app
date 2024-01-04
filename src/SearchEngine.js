@@ -16,7 +16,7 @@ export default function SearchEngine(props) {
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
-      icon: "https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png",
+      icon: response.data.weather[0].icon,
     });
   }
 
